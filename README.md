@@ -1,9 +1,19 @@
 # 11328250
-- schedual
+- schedule
+  - curriculum
+  - to do
 - notification
-- high-lights
-- daily
-- nextweek
-- money(maybe)
-- pomodoro(maybe)
-- text-area(maybe)
+  - daily
+  - nextweek
+- categories
+  - colors
+  - high-lights
+
+
+>- money(maybe)
+>>accounting
+>  - pomodoro(maybe)
+>>for studying?
+>  - text-area(maybe)
+>>notes or something else
+
