@@ -15,7 +15,7 @@
 
 >> money(maybe)
 >- accounting
->  - pomodoro(maybe)
->>for studying?
->  - text-area(maybe)
->>notes or something else
+>> pomodoro(maybe)
+>- for studying?
+>> text-area(maybe)
+>- notes or something else
