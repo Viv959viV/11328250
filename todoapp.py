@@ -12,6 +12,7 @@ class ToDoApp(QWidget):
         self.addButton.clicked.connect(self.add_task)
         self.deleteButton.clicked.connect(self.delete_task)
         self.markCompleteButton.clicked.connect(self.mark_complete)
+        self.highlightButton.clicked.connect(self.mark_highlight)
 
     def add_task(self):
         task = self.taskInput.text()
@@ -35,6 +36,13 @@ class ToDoApp(QWidget):
         else:
             QMessageBox.warning(self, "Error", "No task selected")
 
+    def mark_highlight(self):
+        selected_task = self.taskList.currentItem()
+        if selected_task:
+            selected_task.setStyleSheet("QWidget{background-color:rgb(255, 255, 127);}")
+        else:
+            QMessageBox.warning(self, "Error", "No task selected")
+        
 # 主程式
 if __name__ == '__main__':
     app = QApplication(sys.argv)
